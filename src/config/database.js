@@ -6,7 +6,7 @@ module.exports = {
   host: 'localhost',
   username: 'postgres',
   password: 'willian.123',
-  database: 'nodeappdemo-db',
+  database: 'ebdb',
   define: {
     // to add createAt/updatedAt columns in each table
     timestamps: true,
