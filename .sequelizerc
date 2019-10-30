@@ -1,0 +1,11 @@
+// this file should use the common js syntax e.g. "require" and "module.exports"
+// because the sequelize interface can not read the es5+ "import" and "export" syntax
+
+const { resolve } = require('path')
+
+module.exports = {
+  config: resolve(__dirname, 'src', 'config', 'database.js'),
+  'models-path': resolve(__dirname, 'src', 'app', 'models'),
+  'migrations-path': resolve(__dirname, 'src', 'database', 'migrations'),
+  'seeders-path': resolve(__dirname, 'src', 'database', 'seeds'),
+}
